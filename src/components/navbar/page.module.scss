@@ -1,0 +1,65 @@
+.navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  .navbarContainer {
+    width: 94%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .logoContainer {
+      width: 50px;
+      height: 50px;
+      background-color: #4caf50;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        color: #fff;
+      }
+    }
+    .logoTitle {
+      font-weight: 500;
+    }
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+
+    .link {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+    }
+
+    .activeLink {
+      border-bottom: 2px solid #4caf50;
+    }
+  }
+
+  .userinfo {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    .user {
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.checkItem {
+  .checkBoxActive {
+    border: 1px solid #4caf50 !important;
+  }
+  input {
+    display: none;
+    &:checked + label {
+      border: 1px solid #4caf50 !important;
+      background-color: rgba(126, 243, 130, 0.2);
+    }
+    &:checked + label svg {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .checkBox {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+
+    svg {
+      //   display: none;
+      fill: #4caf50;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+}
+
+.radioItem {
+  input {
+    display: none;
+    &:checked + label {
+      border: 1px solid #4caf50 !important;
+      background-color: rgba(126, 243, 130, 0.2);
+    }
+    &:checked + label .smallCircle {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  .radioBox {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+
+    border: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .smallCircle {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background-color: #4caf50;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+}
